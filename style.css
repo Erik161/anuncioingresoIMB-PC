@@ -24,7 +24,7 @@ header .overlay{
 
 h1{
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 80px;
     margin-bottom: 30px;
 }
 
@@ -52,13 +52,6 @@ button{
 button:hover{
     cursor:pointer;
 }
-
-
-
-
-
-
-
 
 
 
