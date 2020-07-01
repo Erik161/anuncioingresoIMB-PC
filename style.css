@@ -1,9 +1,16 @@
-body{
-    height: 600px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+body{
+    height: 900px;
+}
+
+
 header{
-    background:  url(fondo.JPG);
+    background: url(fondo.JPG);
     text-align: center;
     width: 100%;
     height: auto;
@@ -30,11 +37,11 @@ h1{
 
 h3, p{
     font-family: sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 p{
-    width: 67%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -49,10 +56,36 @@ button{
     font-family: sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: #333;
+}
+
 button:hover{
     cursor:pointer;
 }
 
+
+
+/*
+RESPONSIVE DESIGN MOBILE
+****************************
+****************************
+*/
+@media screen and (max-width:840px)and (min-width: 340px){
+    header{
+        background: url(fondo.JPG);
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background-size:cover;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 0 85% 85% / 70%;
+    }
+    
+    }
 
 
 
