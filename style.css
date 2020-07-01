@@ -19,6 +19,7 @@ header{
     position: relative;
     overflow: hidden;
     border-radius: 0 0 85% 85% / 70%;
+
 }
 
 header .overlay{
@@ -33,7 +34,6 @@ header .overlay{
 .logo{
     width: 100%;
     max-width:400px;
-    margin-top: 5px;
 }
 
 
@@ -77,6 +77,13 @@ button:hover{
     cursor:pointer;
 }
 
+
+/*
+ANIMACION MANO
+****************************
+****************************
+*/
+
 span{
 animation: hey 1s infinite ease-in-out alternate;
 animation-name: hey;
@@ -88,9 +95,16 @@ animation-direction: alternate;
 animation-fill-mode: none;
 animation-play-state: running;
 position: absolute;
-
 }
 
+@keyframes hey{ 
+    0% { 
+        transform: rotate(0deg);
+     }
+    100% { 
+        transform: rotate(20deg);
+     }
+   }
 
 
 /*
@@ -119,7 +133,7 @@ RESPONSIVE DESIGN MOBILE
     
     h3, p{
         font-family: sans-serif;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
     
     p{
@@ -129,6 +143,12 @@ RESPONSIVE DESIGN MOBILE
     }
 
     
+.logo{
+    width: 100%;
+    max-width:400px;
+    margin-top: 5px;
+}
+
     }
 
 
