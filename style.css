@@ -1,9 +1,9 @@
 body{
-    height: 900px;
+    height: 600px;
 }
 
 header{
-    background: url(fondo.JPG);
+    background:  url(fondo.JPG);
     text-align: center;
     width: 100%;
     height: auto;
