@@ -137,11 +137,11 @@ font-weight: normal;
 
 }
 
-@keyframes hey{ 
-    0% { 
+@keyframes hey{
+    0% {
         transform: rotate(0deg);
      }
-    100% { 
+    100% {
         transform: rotate(20deg);
      }
    }
@@ -170,19 +170,19 @@ RESPONSIVE DESIGN MOBILE
         font-size: 45px;
         margin-bottom: 20px;
     }
-    
+
     h3, p{
         font-family: sans-serif;
         margin-bottom: 10px;
     }
-    
+
     p{
         font-size: 14px;
         width: 80%;
         margin: 0 auto;
     }
 
-    
+
 .logo{
     width: 80%;
     max-width:400px;
@@ -190,6 +190,18 @@ RESPONSIVE DESIGN MOBILE
 }
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
