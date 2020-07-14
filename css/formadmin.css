@@ -1,0 +1,467 @@
+/*
+VARIABLE CSS PARA DARLE COLOR A LOS INPUTS
+****************************
+****************************
+*/
+:root{
+    --colorTextos:#49454567;
+}
+
+*::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980); /*  coloca los colores del degradado */  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26D0CE, #1A2980); /*  coloca los colores del degradado */  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/*
+FORMULARIO,INPUTS AND LABELS
+****************************
+****************************
+*/
+
+form{
+    background: #fff;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);/* Sombra en la parte de atras del form. */
+    border-radius: 10px;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{
+    outline: none;
+    color: #5e5d5d;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+
+
+
+/*
+DELINIADO INPUTS
+****************************
+****************************
+*/
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content:"";
+    height: 2px;
+    width: 0%;
+    bottom:0;
+    position:absolute;
+    background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: 0.3s ease with;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+
+
+
+/*
+FONTAWESOME ICON EYES
+****************************
+****************************
+*/
+
+.fa{
+    margin-left:220px;
+}
+.eye{
+    position: absolute;
+}
+#hide1{
+    display: none;
+}
+
+
+/*
+BOTON CON DEGRADADO
+****************************
+****************************
+*/
+
+button{
+    font-family: 'Roboto';
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/*
+RESPONSIVE DESIGN MOBILE
+****************************
+****************************
+*/
+
+@media screen and (max-width:480px)and (min-width: 320px){
+    form{
+        width: 100%;
+    }
+    body{
+        height: auto;
+    }
+
+    button{
+        width: 60%;
+        margin: 10px auto;
+        color: white;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    }
+
+
+@media screen and (max-width:768px)and (min-width: 320px){
+    form{
+        width: 100%;
+    }
+
+    body{
+        height: 500px;
+    }
+
+    button{
+        width: 80%;
+        margin: 10px auto;
+        color: white;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    }
+
+
+@media screen and (max-width:640px)and (min-width: 360px){
+        form{
+            width: 90%;
+        }
+        body{
+            height: 550px;
+        }
+
+        button{
+            width: 60%;
+            margin: 10px auto;
+            color: white;
+            height: 40px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /*
+            FONTAWESOME ICON EYES
+            ****************************
+            ****************************
+            */
+
+            .fa{
+                margin-left:220px;
+            }
+            .eye{
+                position: absolute;
+            }
+            #hide1{
+                display: none;
+            }
+
+        }
+
+
+@media screen and (max-width:812px)and (min-width: 375px){
+            form{
+                width: 80%;
+            }
+            body{
+                height: 750px;
+            }
+
+            button{
+                width: 60%;
+                margin: 10px auto;
+                color: white;
+                height: 40px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            /*
+                FONTAWESOME ICON EYES
+                ****************************
+                ****************************
+                */
+
+                .fa{
+                    margin-left:190px;
+                }
+                .eye{
+                    position: absolute;
+                }
+                #hide1{
+                    display: none;
+                }
+
+
+@media screen and (max-width:640px)and (min-width: 384px){
+                    form{
+                        width: 80%;
+                    }
+                    body{
+                        height: 550px;
+                    }
+
+                    button{
+                        width: 60%;
+                        margin: 10px auto;
+                        color: white;
+                        height: 40px;
+                        font-size: 16px;
+                        cursor: pointer;
+                    }
+
+                    /*
+                        FONTAWESOME ICON EYES
+                        ****************************
+                        ****************************
+                        */
+
+                        .fa{
+                            margin-left:190px;
+                        }
+                        .eye{
+                            position: absolute;
+                        }
+                        #hide1{
+                            display: none;
+                        }
+
+
+
+
+
+
+
+@media screen and (max-width:732px)and (min-width: 412px){
+            form{
+                width: 90%;
+            }
+            body{
+                height: 600px;
+            }
+
+            button{
+                width: 60%;
+                margin: 10px auto;
+                color: white;
+                height: 40px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            /*
+            FONTAWESOME ICON EYES
+            ****************************
+            ****************************
+            */
+
+            .fa{
+                margin-left:250px;
+            }
+            .eye{
+                position: absolute;
+            }
+            #hide1{
+                display: none;
+            }
+
+            }
+
+
+
+
+
+@media screen and (max-width:1024px)and (min-width: 600px){
+            form{
+                width: 70%;
+            }
+            body{
+                height: 850px;
+            }
+
+            button{
+                width: 60%;
+                margin: 10px auto;
+                color: white;
+                height: 40px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            /*
+            FONTAWESOME ICON EYES
+            ****************************
+            ****************************
+            */
+
+            .fa{
+                margin-left:300px;
+            }
+            .eye{
+                position: absolute;
+            }
+            #hide1{
+                display: none;
+            }
+
+            }
+
+
+@media screen and (max-width:1280px)and (min-width: 768px){
+        form{
+            width: 60%;
+        }
+        body{
+            height: 1100px;
+        }
+
+        button{
+            width: 60%;
+            margin: 10px auto;
+            color: white;
+            height: 40px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /*
+            FONTAWESOME ICON EYES
+            ****************************
+            ****************************
+            */
+
+            .fa{
+                margin-left:350px;
+            }
+            .eye{
+                position: absolute;
+            }
+            #hide1{
+                display: none;
+            }
+
+
+        }
+}
+
+
+
+@media screen and (max-width:1366px)and (min-width: 1024px){
+    form{
+        width: 60%;
+    }
+    body{
+        height: 1200px;
+    }
+
+    button{
+        width: 60%;
+        margin: 10px auto;
+        color: white;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /*
+        FONTAWESOME ICON EYES
+        ****************************
+        ****************************
+        */
+
+        .fa{
+            margin-left:500px;
+        }
+        .eye{
+            position: absolute;
+        }
+        #hide1{
+            display: none;
+        }
+
+
+    }
+}
